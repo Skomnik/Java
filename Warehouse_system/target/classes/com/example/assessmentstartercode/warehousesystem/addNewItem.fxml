@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="15.0"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.assessmentstartercode.warehousesystem.AddNewItemController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+
+    <Label text="Add New Item">
+        <font>
+            <Font size="26.0"/>
+        </font>
+    </Label>
+
+
+    <GridPane hgap="10" vgap="10">
+
+        <Label text="Item ID:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="itemIdField" promptText="number" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Item Name:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="itemNameField" promptText="text" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Item Price:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="itemPriceField" promptText="number" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="Pcs in Package:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="pcsInPackageField" promptText="number" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+        <Label text="Packages in Pallet:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <TextField fx:id="packagesInPalletField" promptText="number" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+        <Label text="Reorder Point:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <TextField fx:id="reorderPointField" promptText="number" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+    </GridPane>
+
+
+    <HBox spacing="20" alignment="CENTER">
+        <Button text="Add"
+                prefWidth="100"
+                defaultButton="true"
+                onAction="#onAddItemClick"/>
+
+        <Button text="Back"
+                prefWidth="100"
+                cancelButton="true"
+                onAction="#onBackClick"/>
+    </HBox>
+
+
+    <Label fx:id="statusLabel" textFill="gray"/>
+
+</VBox>
