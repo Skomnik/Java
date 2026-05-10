@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="436.0" prefWidth="264.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.assessmentstartercode.warehousesystem.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText" prefHeight="38.0" prefWidth="177.0" text="Autorisation">
+        <font>
+            <Font size="26.0"/>
+        </font>
+    </Label>
+    <Label prefHeight="18.0" prefWidth="35.0" text="Login" textAlignment="RIGHT"/>
+    <TextField fx:id="loginfield" promptText="Login"/>
+    <Label prefHeight="18.0" prefWidth="58.0" text="Password" textAlignment="RIGHT"/>
+    <PasswordField fx:id="passwordField" promptText="Password"/>
+    <Label prefHeight="18.0" prefWidth="66.0" text="Data source"/>
+    <ChoiceBox fx:id="dataChoiceBox" prefWidth="150.0"/>
+    <HBox alignment="CENTER" prefHeight="88.0" prefWidth="224.0" spacing="20.0">
+        <Button fx:id="ok" defaultButton="true" mnemonicParsing="false" onAction="#onOkButtonClick" text="OK"
+                textFill="WHITE"/>
+        <Button fx:id="Close" cancelButton="true" mnemonicParsing="false" onAction="#onCloseButtonClick" text="Close"/>
+    </HBox>
+</VBox>

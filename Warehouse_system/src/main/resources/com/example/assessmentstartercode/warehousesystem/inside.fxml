@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assessmentstartercode.warehousesystem.InsideController">
+   <children>
+      <Button fx:id="viewBtn" layoutX="119.0" layoutY="101.0" mnemonicParsing="false" onAction="#onViewProductsClick" prefHeight="26.0" prefWidth="207.0" text="View of items on the sales floor" />
+      <Button fx:id="Sale" layoutX="119.0" layoutY="149.0" mnemonicParsing="false" onAction="#onSaleClick" prefHeight="26.0" prefWidth="207.0" text="Register sale" />
+      <Button fx:id="viewOrder" layoutX="119.0" layoutY="200.0" mnemonicParsing="false" onAction="#onViewOrdersClick" text="View list of items moves from buffer" />
+      <Button fx:id="RepPpointBtn" layoutX="119.0" layoutY="245.0" mnemonicParsing="false" onAction="#onRepPointButtonClick" prefHeight="26.0" prefWidth="207.0" text="Change replenishment point fot Item" />
+      <Button fx:id="Logout" layoutX="119.0" layoutY="294.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="26.0" prefWidth="207.0" text="Log Out" />
+      <Label layoutX="75.0" layoutY="43.0" prefHeight="40.0" prefWidth="296.0" text="Welcome Sales Associate" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Button fx:id="Close" layoutX="119.0" layoutY="341.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="26.0" prefWidth="207.0" text="Close" />
+   </children>
+</AnchorPane>

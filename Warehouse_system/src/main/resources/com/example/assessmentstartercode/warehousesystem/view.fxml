@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assessmentstartercode.warehousesystem.ViewController">
+    <children>
+        <ListView fx:id="productListView" layoutX="34.0" layoutY="108.0" prefHeight="210.0" prefWidth="531.0" />
+        <Label fx:id="labelText" layoutX="211.0" layoutY="34.0" text="List of products">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+        <Button fx:id="Back" layoutX="219.0" layoutY="368.0" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="26.0" prefWidth="68.0" text="Back" />
+        <Button fx:id="Close" cancelButton="true" layoutX="310.0" layoutY="368.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="26.0" prefWidth="68.0" text="Close" />
+    </children>
+</AnchorPane>

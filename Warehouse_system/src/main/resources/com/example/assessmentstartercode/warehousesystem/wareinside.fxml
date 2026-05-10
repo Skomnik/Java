@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="446.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assessmentstartercode.warehousesystem.WareinsideController">
+    <children>
+        <Button fx:id="viewBtn" layoutX="119.0" layoutY="101.0" mnemonicParsing="false" onAction="#onViewProductsClick" prefHeight="26.0" prefWidth="207.0" text="View all items in the Buffer" />
+        <Button fx:id="viewOrder" layoutX="119.0" layoutY="147.0" mnemonicParsing="false" onAction="#onViewOrdersClick" prefHeight="51.0" prefWidth="207.0" text="View and confirm list of items moves from buffer and accept" textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="Logout" layoutX="119.0" layoutY="293.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="26.0" prefWidth="207.0" text="Log Out" />
+        <Label layoutX="40.0" layoutY="41.0" prefHeight="40.0" prefWidth="366.0" text="Welcome Warehouse Associate" textAlignment="CENTER">
+            <font>
+                <Font size="26.0" />
+            </font></Label>
+        <Button fx:id="Close" layoutX="119.0" layoutY="339.0" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="26.0" prefWidth="207.0" text="Close" />
+      <Button fx:id="viewOrderSup" layoutX="119.0" layoutY="219.0" mnemonicParsing="false" onAction="#onViewOrderSupClick" prefHeight="51.0" prefWidth="207.0" text="View and Confirming automatic orders from external suppliers" textAlignment="CENTER" wrapText="true" />
+    </children>
+</AnchorPane>
